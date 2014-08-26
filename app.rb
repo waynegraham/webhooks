@@ -9,10 +9,6 @@ get '/' do
   "webhooks are cool"
 end
 
-get '/webhook' do
-  "webhook on Wayne's machine"
-end
-
 post '/payload' do
   request.body.rewind
   payload_body = request.body.read
